@@ -1,0 +1,49 @@
+/* wp-modal */
+.wp-modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  z-index: 2000;
+}
+/* modal (background) */
+.wp-modal-bg {
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    width: 100%;
+    z-index: 3000;
+}
+/* modal content */
+.wp-modal-content {
+  height:100vh;
+  width: 100%;
+}
+/* modal content (image) */
+#wp-modal-img {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: block;
+  z-index: 4000;
+}
+/* smaller than 650 modal content (image) */
+#wp-modal-img2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  display: block;
+  z-index: 4000;
+}
+/* not work width 480px */
+@media (max-width: 480px) {
+  .wp-block-image {
+    pointer-events: none;
+  }
+}
